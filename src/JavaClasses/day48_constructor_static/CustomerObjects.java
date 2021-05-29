@@ -25,6 +25,32 @@ public class CustomerObjects {
         customerList.add(new Customer("Suleyman", 9763));
         customerList.add(new Customer("Volodia", 7562));
 
+        System.out.println(todayCustomer[0].toString());
+        System.out.println(customerList.get(0).toString());
+        System.out.println(customerList);
+
+       for (int i = 0; i < customerList.size(); i ++){
+           System.out.println(customerList.get(i));
+       }
+
+        System.out.println("------- For each loop ------");
+       for (Customer each : customerList ){
+           System.out.println(each);
+       }
+        System.out.println("------ Print Names ------ ");
+        for (Customer each : customerList ) {
+            System.out.println(each.getName());
+        }
+
+        System.out.println("-----Lambda expresion ------");
+        customerList.forEach(each -> System.out.println(each.getName()));
+        for (Customer eachCustomer : customerList){
+            System.out.println(eachCustomer);
+        }
+
+
+
+
 
 
 

@@ -6,6 +6,6 @@ public class Bus {
 
     @Override
     public String toString() {
-        return driver.getName() + "|" + engine.getCylinders();
+        return driver.getName() + " | " + engine.getCylinders();
     }
 }

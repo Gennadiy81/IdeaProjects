@@ -1,4 +1,4 @@
-package homeWork.May_29_Constructor_Ctatic;
+package homeWork.May_29_Constructor_Static;
 
 public class MyCar {
     private String model;

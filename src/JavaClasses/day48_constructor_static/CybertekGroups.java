@@ -23,6 +23,10 @@ public class CybertekGroups {
         System.out.println("group2 members - " + group1.getMembers());
 
 
+        group1.removeMember("Pavel");
+        group1.removeMember("Parvin");
+        System.out.println(group1);
+
 
     }
 }

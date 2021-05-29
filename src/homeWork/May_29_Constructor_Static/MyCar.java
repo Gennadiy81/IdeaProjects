@@ -15,6 +15,10 @@ public class MyCar {
                 ", cylinders=" + cylinders +
                 '}';
     }
+    public static void addToMyCar(int mileage, boolean newOrOld){
+        System.out.println("mileage - " + mileage + "new - " + newOrOld);
+
+    }
 
     public MyCar(){
         System.out.println("My car is awesome");

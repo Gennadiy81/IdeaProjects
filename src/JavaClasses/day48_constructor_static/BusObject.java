@@ -11,6 +11,8 @@ public class BusObject {
         metroBus.engine = new Engine(15);
         System.out.println(metroBus);
 
+        System.out.println(metroBus.driver);
+
 
 
     }

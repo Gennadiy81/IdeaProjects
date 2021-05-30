@@ -31,13 +31,10 @@ public class MyCar {
                 '}';
     }
 
-
-
     public static void myCarNice(int mileage, boolean newOrOld){
         System.out.println("mileage - " + mileage + " car is almost new - " + newOrOld);
 
     }
-
     public MyCar(){
         System.out.println("My car is awesome");
     }

@@ -8,13 +8,16 @@ public class B22DiscordServer {
     user1.setId(1234);
     user1.setName("Martha");
     user1.setRole("Student");
-        System.out.println("user1.toString() = " + user1.toString());
 
-        Admin admin1 = new Admin();
+    Admin admin1 = new Admin();
     admin1.setId(43145);
     admin1.setName("Ivanka");
     admin1.setRole("Admin");
-        System.out.println("admin1.toString() = " + admin1.toString());
+
+    Admin admin2 = new Admin();
+
+        System.out.println(user1.toString());
+        System.out.println(admin1.toString());
 
 
     }

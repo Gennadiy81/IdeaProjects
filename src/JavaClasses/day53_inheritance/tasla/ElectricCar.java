@@ -1,11 +1,15 @@
 package JavaClasses.day53_inheritance.tasla;
 
 public class ElectricCar {
+
     private String model;
     private String make;
     private double price;
     private int year;
     private int range;
+    private static int count;
+
+
 
     public ElectricCar(String model, String make, double price, int year, int range) {
         setMake(make);
@@ -13,6 +17,10 @@ public class ElectricCar {
         this.price = price;
         this.year = year;
         this.range = range;
+        count++;
+    }
+    public static int getCount(){
+        return count;
     }
 
     @Override

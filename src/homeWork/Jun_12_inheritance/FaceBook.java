@@ -1,4 +1,4 @@
-package homeWork.Jun_12;
+package homeWork.Jun_12_inheritance;
 
 public class FaceBook extends MobileApp {
     FaceBook(String name, double version, double budget){

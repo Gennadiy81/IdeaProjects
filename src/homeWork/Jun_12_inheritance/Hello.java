@@ -1,4 +1,4 @@
-package homeWork.Jun_12;
+package homeWork.Jun_12_inheritance;
 
 public class Hello extends MobileApp{
     public Hello(String name, double version, double num){

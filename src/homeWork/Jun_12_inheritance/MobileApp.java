@@ -1,11 +1,19 @@
-package homeWork.Jun_12;
+package homeWork.Jun_12_inheritance;
 
 public class MobileApp {
     String name;
     double version;
-    static double budget;
+    private static double budget;
     double appCost;
     double percent;
+    public static double getBudget() {
+        return budget;
+    }
+
+    public static void setBudget(double budget) {
+        MobileApp.budget = budget;
+    }
+
     {
         System.out.println("my name");
     }
@@ -21,8 +29,8 @@ public class MobileApp {
     }
 
     private void payed(double cost) {
-        if (budget >= cost) {
-            budget -= cost;
+        if (budget >= cost + percent) {
+            budget -= cost + percent;
 
         } else {
             System.out.print("Out of budget my budget is - " +  budget);
@@ -31,7 +39,7 @@ public class MobileApp {
 
     public void setAppCost() {
         payed(appCost);
-        if(appCost <= budget){
+        if(appCost + percent <= budget){
             System.out.println("Payed for - " + name + " " + appCost + "$ ");
         }else {
             System.out.println(" I can't pay for - " + name + " " + appCost);

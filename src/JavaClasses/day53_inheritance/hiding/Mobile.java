@@ -4,16 +4,16 @@ public class Mobile extends Phone{
     String type = "Mobile phone";
 
     public static void use(){
-        System.out.println("Using mobile phone");
+        System.out.println("Using mobile phone Child");
     }
 
     public void text(){
         use();
-        System.out.println("and sending a text message");
+        System.out.println("and sending a text message Child");
     }
     @Override
     public void call(){
         use();
-        System.out.println("and calling on mobile");
+        System.out.println("and calling on mobile Child");
     }
 }

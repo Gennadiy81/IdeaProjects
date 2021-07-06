@@ -2,6 +2,7 @@ package JavaClasses.day59_polymorphism_exceptions.exception_handling;
 
 public class TryCatch {
     public static void main(String[] args) {
+
         try{
             System.out.println(10/2);
             System.out.println(10/0);
@@ -18,7 +19,5 @@ public class TryCatch {
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("ArrayIndexOutOfBoundsException is caught and handled");
         }
-
-
     }
 }

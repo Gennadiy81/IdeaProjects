@@ -34,7 +34,6 @@ public class JavaAnagrams {
         }
         return false;
     }
-
     public static void isAnagramTwo(String a, String b) {
         int wordCount = 0;
         if (JavaAnagrams.isAnagram(a, b)) {

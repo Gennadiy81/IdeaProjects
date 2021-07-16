@@ -1,4 +1,4 @@
-package GroupStadies.July7;
+package GroupStadies.uniqueString;
 
 import java.util.Arrays;
 import java.util.Locale;

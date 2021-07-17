@@ -24,15 +24,23 @@ package homeWork.objectCastingPractice;
 }
  class TestAnimal{
      public static void main(String[] args) {
-        Animal animal = new Cat();
-//         Cat cat1 = new Cat();
-//         ((Cat)animal).mau();
-//         Animal animal1 = new Animal();
-        Cat cat = new Cat();
+         Animal animal = new Animal();
+         Cat cat1 = new Cat();
+         Cat cat2 = (Cat) animal;
+         cat2.run();
+         ((Cat)animal).run();
 
+
+
+//         Animal animal1 = new Animal();
+//        Cat cat = new Cat();
+//
 //         cat = (Cat) animal1;
-         boolean result = animal instanceof Cat;
-         System.out.println(result);
+//         boolean result = animal instanceof Cat;
+//         System.out.println(result);
+//
+//         FourLegs fourLegs = new FourLegs();
+//         fourLegs.walking();
 
 
 

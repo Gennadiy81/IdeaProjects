@@ -85,12 +85,6 @@ public class StringAndDigits {
 
     }
 
-
-
-   
-   
-   
-
     public static int hello() {
         if (maxArr != null)
             return maxNum(maxArr);

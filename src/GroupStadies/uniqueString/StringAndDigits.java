@@ -1,6 +1,7 @@
 package GroupStadies.uniqueString;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class StringAndDigits {
 
@@ -126,7 +127,36 @@ public class StringAndDigits {
 
 
     public static void main(String[] args) {
-        System.out.println(minNum(new int[]{100, 2, 3, 33, 5, 22, 1000}));
+        //System.out.println(minNum(new int[]{100, 2, 3, 33, 5, 22, 1000}));
+        // Finding the length of array 'arr'
+        int[] arr = {2,4,1,3};
+        int length = arr.length;
+
+        // Sorting using a single loop
+        for (int j = 0; j < length - 1; j++) {
+
+            // Checking the condition for two
+            // simultaneous elements of the array
+            if (arr[j] > arr[j + 1]) {
+
+                // Swapping the elements.
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+
+                // updating the value of j = -1
+                // so after getting updated for j++
+                // in the loop it becomes 0 and
+                // the loop begins from the start.
+                j = -1;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+        Random random1 = new Random();
+        int upper = 100;
+        int a = random1.nextInt(upper);
+        Random random2 = new Random(20);
+        System.out.println(a);
     }
 }
 
